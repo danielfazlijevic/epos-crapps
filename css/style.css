@@ -98,8 +98,8 @@ input[type=checkbox] {
 .o-nama {
     display: flex;
     align-items: center;
-    background: var(--dark-blue);
-    color: var(--blue);
+    background: var(--black);
+    color: var(--orange);
     padding-top: 60px !important;
     padding-bottom: 60px !important;
 }
@@ -121,15 +121,15 @@ input[type=checkbox] {
 
 .saznaj-btn{
     margin-top: 15px;
-    border: 1px solid var(--blue);
-    color: var(--blue);
+    border: 1px solid var(--orange);
+    color: var(--orange);
     padding: 10px;
     text-decoration: none;
     display: inline-block;
 }
 
 .saznaj-btn:hover{
-    background: var(--blue);
+    background: var(--orange);
     color: white;
 }
 
