@@ -74,6 +74,7 @@ input[type=checkbox] {
 
 .hero-text {
     text-align: center;
+    transition: 0.2s;
     font-size: 60%;
 }
 
@@ -88,7 +89,7 @@ input[type=checkbox] {
 .hero p {
     font-size: 6em;
     margin: 0;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -329,12 +330,10 @@ textarea {
 
     .hero h3 {
         font-size: 2rem;
-        color: #171e30;
     }
 
     .hero p {
         font-size: 1rem;
-        color: white;
     }
 
     .menu a {
