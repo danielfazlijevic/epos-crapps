@@ -1,12 +1,20 @@
+:root {
+    --orange: rgba(215, 38, 61, 1);
+    --dark-blue: rgba(2, 24, 43, 1);
+    --blue: rgba(1, 151, 246, 1);
+    --black: rgba(10, 9, 8, 1);
+    --yellow: rgba(255, 255, 130, 1);
+}
+
 body {
     margin: 0;
     padding: 0;
     height: 100%;
-    
+
 
     font-family: 'IBM Plex Mono', monospace;
 
-
+    color: var(--black);
     line-height: 1.4;
 }
 
@@ -20,15 +28,16 @@ h3 {
     line-height: 1.2;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-input[type=checkbox]{
+input[type=checkbox] {
     transform: scale(1.5);
     margin-right: 10px;
-    
+
 }
+
 .menu {
     position: absolute;
     max-width: 100vw;
@@ -37,18 +46,18 @@ input[type=checkbox]{
     left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: rgba(28, 44, 51, 0.88);
+    background: var(--black);
 }
 
 .menu a {
     margin-left: 10px;
-    color: #d6d6bf;
+    color: var(--orange);
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 .menu a:hover {
-    border-bottom: 4px solid #d6d6bf;
+    border-bottom: 4px solid var(--orange);
 }
 
 .hero {
@@ -63,7 +72,7 @@ input[type=checkbox]{
     justify-content: center;
 }
 
-.hero-text{
+.hero-text {
     text-align: center;
     font-size: 60%;
 }
@@ -89,8 +98,8 @@ input[type=checkbox]{
 .o-nama {
     display: flex;
     align-items: center;
-    background: #d6d6bf;
-    color: #171e30;
+    background: var(--dark-blue);
+    color: var(--blue);
     padding-top: 60px !important;
     padding-bottom: 60px !important;
 }
@@ -102,11 +111,26 @@ input[type=checkbox]{
 
 .o-nama div {
     width: 65%;
+
 }
 
 .o-nama img {
     width: 35%;
     height: auto;
+}
+
+.saznaj-btn{
+    margin-top: 15px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.saznaj-btn:hover{
+    background: var(--blue);
+    color: white;
 }
 
 .container {
@@ -284,16 +308,17 @@ textarea {
     margin-top: 10px;
 }
 
-.poruka-poslata{
+.poruka-poslata {
     animation: slideIn 0.7s forwards;
 }
 
-@keyframes slideIn{
-    from{
+@keyframes slideIn {
+    from {
         transform: translateY(-50%);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateY(0);
         opacity: 1;
     }
@@ -330,7 +355,7 @@ textarea {
     .o-nama img {
         width: 100%;
     }
-
+   
     .about-us-sadrzaj div p,
     .about-us-sadrzaj img {
         width: 100%;
@@ -344,17 +369,17 @@ textarea {
         margin-left: 0;
     }
 
-    .flip-clock-wrapper ul{
+    .flip-clock-wrapper ul {
         width: 8px;
         margin: 1px;
     }
 
-    .inn{
+    .inn {
         font-size: 32px !important;
     }
-    
+
     .o-nama h2 {
         font-size: 2rem;
     }
-    
+
 }
