@@ -1,18 +1,21 @@
 :root {
-    --orange: rgba(215, 38, 61, 1);
+    --orange: rgb(187, 12, 35);
     --dark-blue: rgba(2, 24, 43, 1);
-    --blue: rgba(1, 151, 246, 1);
+    --blue: rgba(6, 84, 133, 1);
     --black: rgba(10, 9, 8, 1);
     --yellow: rgba(255, 255, 130, 1);
+    --blue--alpha-50: rgba(6, 84, 133, 0.5);
+    --orange--alpha-50: rgba(187, 12, 35, 0.5);
 }
 
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
 
 
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Montserrat', sans-serif, 'IBM Plex Mono', monospace;
 
     color: var(--black);
     line-height: 1.4;
@@ -35,8 +38,14 @@ button:hover {
 input[type=checkbox] {
     transform: scale(1.5);
     margin-right: 10px;
+    width: auto !important;
 
 }
+/* 
+header {
+    position: relative;
+    z-index: 2;
+} */
 
 .menu {
     position: absolute;
@@ -70,6 +79,7 @@ input[type=checkbox] {
     background-attachment: fixed;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .hero-text {
@@ -98,11 +108,17 @@ input[type=checkbox] {
 
 .o-nama {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     background: var(--black);
     color: var(--orange);
     padding-top: 60px !important;
     padding-bottom: 60px !important;
+}
+
+.o-nama div:nth-of-type(2n) {
+    align-self: flex-end;
+    text-align: right;
 }
 
 .o-nama h2 {
@@ -146,7 +162,7 @@ input[type=checkbox] {
 .about-us-sadrzaj div {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 15px;
 }
 
@@ -158,6 +174,7 @@ input[type=checkbox] {
 .about-us img {
     width: 50%;
     padding: 0 10px;
+    margin: 0;
 }
 
 .about-us img {
@@ -231,7 +248,6 @@ button {
 }
 
 .kontakt {
-    background-color: #d6d6bf;
 
 }
 
@@ -242,7 +258,8 @@ button {
 }
 
 .kontakt-hero {
-    background: url("../img/kontakt.jpg");
+    /* position: relative; */
+    background: url("../img/photo213.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -252,13 +269,36 @@ button {
     padding-bottom: 80px;
 }
 
+.kontakt-hero-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.kontakt-hero-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
 .kontakt-sadrzaj {
     display: flex;
+    flex-wrap: wrap;
+}
 
+.kontakt-info, .kontakt-forma {
+    /* width: 50%; */
+    flex: 1 1 50%;
 }
 
 .kontakt-info {
-    width: 50%;
+    padding: 40px 80px;
+    /* background-image: linear-gradient(to right, black 0%, var(--orange) 100%); */
+    /* color: white; */
 }
 
 .kontakt-info p {
@@ -271,10 +311,9 @@ button {
 }
 
 .kontakt-forma form {
-    background: rgb(255, 251, 232);
+    background-image: linear-gradient(to right, var(--blue--alpha-50) 0%, var(--blue) 100%);
     min-height: 400px;
-    padding: 20px;
-    margin-left: 25px;
+    padding: 40px 80px;
 }
 
 .kontakt-forma input,
@@ -307,6 +346,12 @@ textarea {
 
 .kontakt-forma button {
     margin-top: 10px;
+    border-radius: 3px;
+}
+
+.kontakt-checkbox {
+    display: flex;
+    align-items: center;
 }
 
 .poruka-poslata {

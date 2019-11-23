@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Razvoj</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kontakt.css">
 </head>
 
 <body>
@@ -20,49 +21,59 @@
 
     </header>
     <div class="kontakt">
-        <div class="kontakt-hero container">
-
-            <h2>Kontakt</h2>
-            <p>Ukoliko imate neka dodatna pitanja ili želite da ostvarimo neku saradnju, možete nas kontaktirati pomoću kontakt forme ispod.</p>
-        </div>
-        <div class="kontakt-sadrzaj">
-            <div class="kontakt-info container">
-                <h3>Informacije</h3>
-                <p>Adresa: <br>Jove Ilića 154,
-                        11010 Beograd, Srbija</p>
-                        <p>Broj telefona: <br> <a href="tel:+381113950800">+381 11 3950 800</a> </p>
-                        <p>Mail: <br><a href="mailto:office@dugorocnirazvoj.rs">office@dugorocnirazvoj.rs</a></p>
-            </div>
+        <div class="kontakt-card">
             <div class="kontakt-forma">
-                    <form id="kontaktForma">
-                            <div>
-                                <label for="kontaktMejl">Mejl adresa</label>
-                                <input type="email" id="email" required placeholder="primer@gmail.com">
-                            </div>
-                            <div>
-                                <label for="status">Zanimanje</label>
-                                <select id="status">
-                                    <option>Učenik</option>
-                                    <option>Student</option>
-                                    <option>Zaposlen</option>
-                                    <option>Penzioner</option>
-                                    <option>Drugo</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="poruka">Poruka</label>
-                                <textarea  id="poruka" rows="3" required placeholder="Vaša poruka"></textarea>
-                            </div>
-                            <div>
-                                <label for="antispam">Antispam zaštita</label>
-                              <div class="flex"><span id="broj1"></span> + 
-                                <span id="broj2"></span> = <input type="number" required id="antispam" />
-                                </div>
-                            </div>
-                            <button type="submit" class="btn">Pošalji</button>
-                        </form>
+                <form id="kontaktForma">
+                    <div>
+                        <label for="kontaktMejl">Mejl adresa</label>
+                        <input type="email" id="email" required placeholder="primer@gmail.com">
+                    </div>
+                    <div>
+                        <label for="status">Pozicija</label>
+                        <select id="status">
+                            <option>Frontend</option>
+                            <option>Backend</option>
+                            <option>Devops</option>
+                            <option>Dizajn</option>
+                            <option>Drugo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="poruka">Poruka</label>
+                        <textarea id="poruka" rows="3" required placeholder="Vaša poruka"></textarea>
+                    </div>
+                    <div>
+                        <label for="antispam">Antispam zaštita</label>
+                        <div class="flex"><span id="broj1"></span> +
+                            <span id="broj2"></span> = <input type="number" required id="antispam" />
+                        </div>
+                    </div>
+                    <div class="kontakt-checkbox">
+                        <input type="checkbox" id="terms" required />
+                        <label for="terms">Prihvatam uslove korišćenja</label>
+                    </div>
+                    <button type="submit" class="btn">Pošalji</button>
+                </form>
+            </div>
+            <div class="kontakt-sadrzaj">
+                    <div class="kontakt-info container">
+                        <h3>Informacije</h3>
+                        <p>Adresa: <br>Jove Ilića 154,
+                                11010 Beograd, Srbija</p>
+                                <p>Broj telefona: <br> <a href="tel:+381113950800">+381 11 3950 800</a> </p>
+                                <p>Mail: <br><a href="mailto:office@dugorocnirazvoj.rs">office@dugorocnirazvoj.rs</a></p>
+                    </div>
+        </div>
+        </div>
+        <!-- <div class="kontakt-hero-container">
+            <div class="kontakt-hero container">
+                <h2>Kontakt</h2>
+                <p>Ukoliko imate neka dodatna pitanja ili želite da ostvarimo neku saradnju, možete nas kontaktirati pomoću kontakt forme ispod.</p>
             </div>
         </div>
+        
+            
+        </div> -->
     </div>
     <footer class="container">
         Copyright <span id="godina">2019.</span> Fakultet organizacionih nauka

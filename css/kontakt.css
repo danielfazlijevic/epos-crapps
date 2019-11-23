@@ -1,0 +1,28 @@
+.kontakt {
+  padding: 180px 0;
+  background-color: var(--dark-blue);
+}
+
+.kontakt-card {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+  max-width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  color: white;
+  border-radius: 8px;
+}
+
+.kontakt-forma form {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.kontakt label {
+  margin-bottom: 5px;
+}
+
+.kontakt form > div {
+  margin-bottom: 15px;
+}
+
