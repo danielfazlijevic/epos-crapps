@@ -91,6 +91,7 @@ header {
 
 .hero h3 {
     font-family: 'Montserrat', sans-serif;
+    will-change: font-size, opacity;
     font-size: 150px;
     color: rgba(255, 255, 255, 0.95);
     margin: 0;
@@ -100,6 +101,7 @@ header {
 
 .hero p {
     font-size: 6em;
+    will-change: opacity;
     margin: 0;
         color: rgba(255, 255, 255, 0.8);
 }
