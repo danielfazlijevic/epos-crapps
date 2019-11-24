@@ -109,6 +109,14 @@ header {
 
 
 
+.images-container {
+    background-color: var(--black);
+    padding: 20px 0;
+}
+
+.images img {
+    margin: 10px;
+}
 
 .o-nama {
     display: flex;
